@@ -14,7 +14,7 @@
   */
 
   //=====================================================
-  //$runnable = TRUE; // ENABLE THIS ONCE TO FORCE UPDATE
+  $runnable = TRUE; // ENABLE THIS ONCE TO FORCE UPDATE
   //=====================================================
   define('EMONCMS_EXEC', 1);
 
@@ -25,24 +25,6 @@
   if(!$runnable) {echo "to run script uncomment runnable"; die;}
 
   $shema = array();
-
-  $schema['users'] = array(
-    'id'=> array('type'=>'int NOT NULL AUTO_INCREMENT, PRIMARY KEY(id)'),
-    'username'=> array('type'=>'varchar(30)'),
-    'password'=> array('type'=>'varchar(64)'),
-    'salt'=> array('type'=>'varchar(3)'),
-    'apikey_write'=> array('type'=>'varchar(64)'),
-    'apikey_read'=> array('type'=>'varchar(64)'),
-    'lastlogin'=> array('type'=>'DATETIME'),
-    'admin'=> array('type'=>'INT NOT NULL')
-  );
-
-  $schema['statistics'] = array(
-    'userid'=> array('type'=>'int'),
-    'uphits'=> array('type'=>'int'),
-    'dnhits'=> array('type'=>'int'),
-    'memory'=> array('type'=>'int')
-  );
 
   $schema['energyaudit'] = array(
     'userid'=> array('type'=>'INT NOT NULL'),

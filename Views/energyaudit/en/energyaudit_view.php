@@ -7,6 +7,8 @@
     Part of the OpenEnergyMonitor project:
     http://openenergymonitor.org
 ---------------------------------------------------------------------------------->
+    <link rel="stylesheet" type="text/css" href="<?php print $GLOBALS['path']; ?>Views/energyaudit/style.css" />
+
           <div style="margin: 0px auto; max-width: 990px; text-align:left; margin-top:20px;">
 
 <div class='widget-container' style="width:590px; min-height:550px; margin-bottom: 20px; float:left; position:relative;">
