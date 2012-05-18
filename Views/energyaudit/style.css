@@ -1,0 +1,36 @@
+.top_menu2
+{
+  background-color:#eee;
+}
+
+.top_menu2 ul
+{
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.top_menu2 ul li 
+{
+  float: left;
+  width: 33.33%;
+}
+
+.top_menu2 ul li a {
+  font-size: 13px;
+  text-align: center;
+
+  font-weight: bold;
+  color: #fff;
+
+  display: block;
+  text-decoration: none;
+  line-height: 35px;
+  margin: 0;
+  text-align: center;
+  border-left: 2px solid #eee;
+  background-color: #aaa;
+}
+
+.top_menu2 ul li a:hover { color: #fff; cursor:pointer; background-color: #888;}
+.top_menu2 li:hover ul, li.over ul { display: block;  background-color:#fff;}
